@@ -1,0 +1,14 @@
+POST http://localhost:3001/v1/branch/nearby
+content-type: application/json
+
+{
+    "location": {
+        "lat": 13.901640,
+        "lng": 100.483366
+    },
+    "distance": 100000,
+    "acerolaCherry1000mg": 1,
+    "salmonFish1000mg": 1,
+    "page": 1,
+    "size": 10
+}
