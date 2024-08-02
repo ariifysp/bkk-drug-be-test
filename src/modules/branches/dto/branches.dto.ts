@@ -1,5 +1,5 @@
 import { Type } from 'class-transformer'
-import { IsNotEmpty, IsNumber, ValidateNested } from 'class-validator'
+import { IsNotEmpty, IsNumber, IsOptional, ValidateNested } from 'class-validator'
 
 class Location {
   @IsNotEmpty()
@@ -28,11 +28,11 @@ export class FindBranchesNearByDto {
   @IsNumber()
   size: number
 
-  @IsNotEmpty()
+  @IsOptional()
   @IsNumber()
-  acerolaCherry1000mg: number
+  acerolaCherry1000mg?: number
 
-  @IsNotEmpty()
+  @IsOptional()
   @IsNumber()
-  salmonFish1000mg: number
+  salmonFish1000mg?: number
 }

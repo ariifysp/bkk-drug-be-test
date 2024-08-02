@@ -8,6 +8,12 @@ export interface BranchesNearBy {
   distance: number
 }
 
+export interface BranchesNearByCondition {
+  location: any
+  acerola_cherry_1000mg?: any
+  salmon_fish_1000mg?: any
+}
+
 export interface ResponseBranchesNearBy {
   page: number
   totalPage: number
